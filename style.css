@@ -13,28 +13,43 @@
 body {
     margin: 0;
     padding: 0;
-
-    background-color: var(--background);
 }
 
 header {
-    display: flex;
-    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    min-height: 100vh;
     width: 100%;
 
+    background-color: black;
     overflow: hidden;
 }
 
 header > img {
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    position: fixed;
-    top: -50;
-    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(2px);
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-
+.text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%) scaleY(1.2);
+    font-size: 5vw;
+    color: var(--primary);
+    z-index: 10;
+    background-color: var(--text);
+    padding: 5px;
+    border: 4px solid var(--accent);
+    border-radius: 5px;
+}
 
 nav {
     display: flex;
@@ -77,8 +92,8 @@ nav > a.active {
 }
 
 main {
-    margin: 0;
+    position: relative;
+    margin-top: 100vh;
     background-color: var(--background);
-    height: 200vh;
-    z-index: 1;
+    min-height: 100vh;
 }
