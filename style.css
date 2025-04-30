@@ -113,10 +113,30 @@ main > h1 {
     text-align: center;
 }
 
-.flexBoxes{
+.flexBoxes, .flexBoxes:visited{
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    text-decoration: none;
 }
 
 .box {
     display: flex;
+    width: 25vw;
+    flex-direction: column;
+    outline: 5px solid black;
+    overflow: hidden;
+    background-color: var(--secondary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.box > p {
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 5px;
 }
