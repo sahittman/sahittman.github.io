@@ -112,3 +112,11 @@ main > section {
 main > h1 {
     text-align: center;
 }
+
+.flexBoxes{
+    display: flex;
+}
+
+.box {
+    display: flex;
+}
