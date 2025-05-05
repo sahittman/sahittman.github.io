@@ -117,6 +117,10 @@ main > img {
     max-width: 40vw;
 }
 
+main > p {
+    font-family: Georgia, serif; 
+}
+
 .flexBoxes, .flexBoxes:visited{
     display: flex;
     flex-direction: row;
