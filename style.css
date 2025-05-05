@@ -113,12 +113,12 @@ main > h1 {
     text-align: center;
 }
 
-main > img {
+main img {
     max-width: 40vw;
 }
 
-main > p {
-    font-family: Georgia, serif; 
+main p {
+    font-family: georgia, serif;
 }
 
 .flexBoxes, .flexBoxes:visited{
