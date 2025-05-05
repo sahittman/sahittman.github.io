@@ -113,6 +113,10 @@ main > h1 {
     text-align: center;
 }
 
+main > img {
+    max-width: 40vw;
+}
+
 .flexBoxes, .flexBoxes:visited{
     display: flex;
     flex-direction: row;
